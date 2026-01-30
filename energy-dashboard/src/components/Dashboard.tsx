@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Zap, Activity, Battery, Server, Wifi, WifiOff, Lightbulb, Fan, Plug } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Zap, Activity, Battery, Server, Wifi, WifiOff, Lightbulb, Fan, Plug, Brain } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import WaveformAnalysis from './WaveformAnalysis';
@@ -167,6 +167,16 @@ export default function Dashboard() {
                         >
                             <Activity className="w-4 h-4 mr-2" />
                             Waveform AI
+                            Waveform AI
+                        </Button>
+                        <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => window.location.href = '/maintenance'}
+                            className="hidden md:flex border-purple-500/20 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
+                        >
+                            <Brain className="w-4 h-4 mr-2" />
+                            Neural Sentinel
                         </Button>
 
                         {/* Simulation Controls */}

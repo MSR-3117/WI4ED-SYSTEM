@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import { JSX, SVGProps, useState } from "react";
+import { useState } from "react";
+import type { JSX, SVGProps } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
