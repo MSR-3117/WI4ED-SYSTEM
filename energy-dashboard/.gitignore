@@ -23,3 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 .vite
+
+# Environment Variables
+.env
+.env.*
+
+# OS
+Thumbs.db
+Desktop.ini

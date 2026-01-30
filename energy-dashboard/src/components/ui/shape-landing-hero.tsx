@@ -1,8 +1,8 @@
 "use client";
-import React from "react";
+
 import { DottedSurface } from "@/components/ui/dotted-surface";
 import { motion } from "framer-motion";
-import { ArrowRight, Zap, ShieldCheck, Activity } from "lucide-react";
+
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 

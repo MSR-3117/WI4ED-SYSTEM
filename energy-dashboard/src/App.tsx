@@ -3,6 +3,7 @@ import { HeroGeometric } from './components/ui/shape-landing-hero';
 import Login from './components/ui/login-form';
 import Dashboard from './components/Dashboard';
 import WaveformAnalysis from './components/WaveformAnalysis';
+import Maintenance from './components/Maintenance';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/waveforms" element={<WaveformAnalysis />} />
+        <Route path="/maintenance" element={<Maintenance />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
